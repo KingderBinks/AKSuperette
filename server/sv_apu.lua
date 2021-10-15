@@ -10,7 +10,6 @@ AddEventHandler('apuapuapuapuapua', function(item)
 		xPlayer.addInventoryItem(item.Value, 1)
         xPlayer.removeMoney(item.Price)
         TriggerClientEvent('esx:showNotification', source, '~g~Banque : ~w~Vous avez payé '..item.Price..'')
-        PerformHttpRequest("https://discord.com/api/webhooks/891710495265030195/j3Kl-DkVwZ7Uf2XyYm_onurUxuUX40UzJ8TyXmbys-SVvP46JlbO3r3J9MLoBXCCPpDt", function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " à acheter ".. item.Label .." [Superette]"}), { ['Content-Type'] = 'application/json' }) 
     else
 		TriggerClientEvent('esx:showNotification', source, 'Vous ne pouvez pas acheter ~g~1x ' .. item.Label .. '~s~' .. ' il vous manque ' .. '~r~' .. item.Price - playerMoney .. '$')
     end
@@ -31,7 +30,6 @@ AddEventHandler('locaulocaloaca', function(item)
         xPlayer.removeMoney(item.Price)
         societyAccount.addMoney (item.Price)
         TriggerClientEvent('esx:showNotification', source, '~g~Banque : ~w~Vous avez payé '..item.Price..'')
-        PerformHttpRequest("https://discord.com/api/webhooks/891710495265030195/j3Kl-DkVwZ7Uf2XyYm_onurUxuUX40UzJ8TyXmbys-SVvP46JlbO3r3J9MLoBXCCPpDt", function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " à acheter ".. item.Label .." [Superette]"}), { ['Content-Type'] = 'application/json' }) 
     else
 		TriggerClientEvent('esx:showNotification', source, 'Vous ne pouvez pas acheter ~g~1x ' .. item.Label .. '~s~' .. ' il vous manque ' .. '~r~' .. item.Price - playerMoney .. '$')
     end
@@ -52,7 +50,6 @@ AddEventHandler('tabloctabcwshlast', function(item)
         xPlayer.removeMoney(item.Price)
         societyAccount.addMoney (item.Price)
         TriggerClientEvent('esx:showNotification', source, '~g~Banque : ~w~Vous avez payé '..item.Price..'')
-        PerformHttpRequest("https://discord.com/api/webhooks/891710495265030195/j3Kl-DkVwZ7Uf2XyYm_onurUxuUX40UzJ8TyXmbys-SVvP46JlbO3r3J9MLoBXCCPpDt", function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " à acheter ".. item.Label .." [Superette]"}), { ['Content-Type'] = 'application/json' }) 
     else
 		TriggerClientEvent('esx:showNotification', source, 'Vous ne pouvez pas acheter ~g~1x ' .. item.Label .. '~s~' .. ' il vous manque ' .. '~r~' .. item.Price - playerMoney .. '$')
     end
@@ -73,7 +70,6 @@ AddEventHandler('brrrbrbrrbrrrloc', function(item)
         xPlayer.removeMoney(item.Price)
         societyAccount.addMoney (item.Price)
         TriggerClientEvent('esx:showNotification', source, '~g~Banque : ~w~Vous avez payé '..item.Price..'')
-        PerformHttpRequest("https://discord.com/api/webhooks/891710495265030195/j3Kl-DkVwZ7Uf2XyYm_onurUxuUX40UzJ8TyXmbys-SVvP46JlbO3r3J9MLoBXCCPpDt", function(err, text, headers) end, 'POST', json.encode({username = "", content = xPlayer.getName() .. " à acheter ".. item.Label .." [Superette]"}), { ['Content-Type'] = 'application/json' }) 
     else
 		TriggerClientEvent('esx:showNotification', source, 'Vous ne pouvez pas acheter ~g~1x ' .. item.Label .. '~s~' .. ' il vous manque ' .. '~r~' .. item.Price - playerMoney .. '$')
     end
